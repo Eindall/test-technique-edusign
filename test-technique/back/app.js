@@ -1,13 +1,16 @@
 const express = require('express');
 const fs = require('fs');
-
-const database = require('./db.json');
+const cors = require('cors');
 
 const app = express();
+app.use(cors());
 
-app.get('/attendance-sheet', (req, res) => {
-  console.log(req);
-  // TODO : Get students list
+app.get('/attendance-sheet', (_req, res) => {
+  fs.readFile('./back/db.json', "utf8", async (_err, jsonString) => {
+    const test =  (await JSON.parse(jsonString))?.attendanceSheet?.STUDENTS;
+    console.log(test);
+    res.send(test);
+  });
 });
 
 app.put('/student/sign', (req, res) => {
@@ -16,7 +19,7 @@ app.put('/student/sign', (req, res) => {
 });
 
 app.put('/student/setAbs', (req, res) => {
-  console.log(req);
+  console.log(req.body);
   // TODO : Set student as absent
 })
 

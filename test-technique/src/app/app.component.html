@@ -1,2 +1,8 @@
 <h1>{{ title }}</h1>
-<div></div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+  <app-student
+    *ngFor="let student of students"
+    [student]="student"
+    (setAbsent)="onSetStudentAbsent($event)"
+  ></app-student>
+</div>

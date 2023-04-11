@@ -1,0 +1,13 @@
+<main
+  *ngIf="student"
+  style="display: flex; flex-direction: row; justify-content: space-between"
+>
+  <div style="display: flex; flex-direction: row; gap: 8px">
+    <h2>{{ student.FIRSTNAME }}</h2>
+    <h2>{{ student.LASTNAME }}</h2>
+    <h3>{{ presence }}</h3>
+  </div>
+  <div>
+    <button (click)="onSetAbsent()">Mettre absent</button>
+  </div>
+</main>

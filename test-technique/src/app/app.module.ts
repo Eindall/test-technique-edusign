@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FlexLayoutModule } from '@angular/flex-layout';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
+import { StudentComponent } from './student/student.component';
 
 @NgModule({
-  declarations: [AppComponent],
-  imports: [BrowserModule, FlexLayoutModule],
+  declarations: [AppComponent, StudentComponent],
+  imports: [BrowserModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
