@@ -1,0 +1,60 @@
+{
+    "attendanceSheet": {
+        "ID": 7817231,
+        "NAME": "Test technique",
+        "STUDENTS": [
+            {
+                "id": 1,
+                "presenceState": false,
+                "signatureTimestamp": null,
+                "signature": null,
+                "comment": "",
+                "dateCreated": "2023-01-24T10:58:13.000Z",
+                "dateUpdated": "2023-01-24T10:58:13.000Z",
+                "FIRSTNAME": "François",
+                "LASTNAME": "Paulus"
+            },
+            {
+                "id": 2,
+                "presenceState": false,
+                "delay": 0,
+                "signatureTimestamp": null,
+                "signature": null,
+                "comment": "",
+                "dateCreated": "2023-01-24T10:58:13.000Z",
+                "dateUpdated": "2023-01-24T10:58:13.000Z",
+                "FIRSTNAME": "Anthony",
+                "LASTNAME": "Pigier"
+            },
+            {
+                "id": 3,
+                "presenceState": false,
+                "delay": 0,
+                "signatureTimestamp": null,
+                "signature": null,
+                "comment": "",
+                "dateCreated": "2023-01-24T10:58:13.000Z",
+                "dateUpdated": "2023-01-24T10:58:13.000Z",
+                "EDITED": false,
+                "FIRSTNAME": "Rachid",
+                "LASTNAME": "Rabiah"
+            },
+            {
+                "id": 4,
+                "presenceState": false,
+                "delay": 0,
+                "signatureTimestamp": null,
+                "signature": null,
+                "comment": "",
+                "dateCreated": "2023-01-24T10:58:13.000Z",
+                "dateUpdated": "2023-01-24T10:58:13.000Z",
+                "FIRSTNAME": "Olivier",
+                "LASTNAME": "Rameil"
+            }
+        ],
+        "START": "2023-01-24T11:00:00.000Z",
+        "END": "2023-01-24T13:00:00.000Z",
+        "DATE_CREATED": "2023-01-24T10:58:13.000Z",
+        "DATE_UPDATED": "2023-01-24T10:58:13.000Z"
+    }
+}
